@@ -1,0 +1,16 @@
+<.simple_form :let={f} for={@changeset} action={@action}>
+    <.error :if={@changeset.action}>
+      Oops, something went wrong! Please check the errors below.
+    </.error>
+    <.input field={f[:deposit]} type="number" label="Deposit" />
+    <.input
+    field={f[:deposit]}
+    type="select"
+    label="User"
+    options={[{"5", "5"}, {"10", "10"}, {"20", "20"}, {"30", "30"}, {""}]}
+/>
+    <:actions>
+      <.button>Execute Transaction</.button>
+    </:actions>
+  </.simple_form>
+  

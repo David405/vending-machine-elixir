@@ -1,0 +1,8 @@
+<.header>
+  Buy Product <%= @product.id %>
+  <:subtitle>Use this form to purchase product.</:subtitle>
+</.header>
+
+<.buy_form changeset={@changeset} action={~p"/products/#{@product}"} />
+
+<.back navigate={~p"/products"}>Back to products</.back>

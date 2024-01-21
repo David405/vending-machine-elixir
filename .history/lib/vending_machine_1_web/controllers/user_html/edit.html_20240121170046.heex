@@ -1,0 +1,8 @@
+<.header>
+  Make Deposit
+  <:subtitle>Make deposits below</:subtitle>
+</.header>
+
+<.deposit_form changeset={@changeset} action={~p"/u#{@user}"} />
+
+<.back navigate={~p"/users"}>Back</.back>
